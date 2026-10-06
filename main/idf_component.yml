@@ -1,0 +1,7 @@
+## Od ESP-IDF 6.0 sterownik W5500 nie jest czescia IDF - pobiera go menedzer komponentow.
+## Dla IDF < 6.0 regula ponizej wylacza zaleznosc (tam sterownik jest wbudowany).
+dependencies:
+  espressif/w5500:
+    version: "^2.0.0"
+    rules:
+      - if: "idf_version >=6.0"
